@@ -153,10 +153,10 @@ const Items = () => {
               </Button>
             </Col>
             <Col flex={3}>
-              <Button icon={<ReloadOutlined/>}/>
-              <Button icon={<ColumnHeightOutlined/>}/>
-              <Button icon={<SettingOutlined/>}/>
-              <Button icon={<FullscreenOutlined/>}/>
+              <Button key="3" type="link" icon={<ReloadOutlined/>}/>
+              <Button key="4" type="link" icon={<ColumnHeightOutlined/>}/>
+              <Button key="5" type="link" icon={<SettingOutlined/>}/>
+              <Button key="6" type="link" icon={<FullscreenOutlined/>}/>
               
             </Col>
 
