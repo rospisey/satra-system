@@ -3,6 +3,7 @@ import { Breadcrumb, Button, Col, Dropdown, Menu, PageHeader, Row, Table, } from
 import ButtonGroup from "antd/lib/button/button-group";
 import Search from "antd/lib/input/Search"
 import { Content } from "antd/lib/layout/layout"
+import Link from "next/link";
 
 const onSearch = value => console.log(value);
 const dataSource = [
@@ -182,14 +183,10 @@ const Items = () => {
         subTitle="This is a subtitle"
         extra={[
 
-
-
-
-
         ]}
       />
       <Row justify='space-between'>
-        <Col span={4} style={{margin: "0 48px"}}>
+        <Col span={4} style={{ margin: "0 48px" }}>
           <Dropdown overlay={menu} >
             <a onClick={e => e.preventDefault()}>
               Filter <DownOutlined />
@@ -208,16 +205,16 @@ const Items = () => {
               </Button>
             </Col>
             <Col flex={3}>
-              <Button key="2" type="primary" icon={<PlusOutlined />}>
+              <Button key="2" type="primary" icon={<PlusOutlined />} href="/add-item">
                 Add Items
               </Button>
             </Col>
             <Col flex={3}>
-              <Button key="3" type="link" icon={<ReloadOutlined/>}/>
-              <Button key="4" type="link" icon={<ColumnHeightOutlined/>}/>
-              <Button key="5" type="link" icon={<SettingOutlined/>}/>
-              <Button key="6" type="link" icon={<FullscreenOutlined/>}/>
-              
+              <Button key="3" type="link" icon={<ReloadOutlined />} />
+              <Button key="4" type="link" icon={<ColumnHeightOutlined />} />
+              <Button key="5" type="link" icon={<SettingOutlined />} />
+              <Button key="6" type="link" icon={<FullscreenOutlined />} />
+
             </Col>
 
           </Row>
