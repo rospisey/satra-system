@@ -1,5 +1,6 @@
-import { BellOutlined, DownOutlined, PlusCircleFilled, PlusOutlined, QuestionCircleOutlined, SearchOutlined } from "@ant-design/icons";
+import { BellOutlined, ColumnHeightOutlined, DownOutlined, FullscreenOutlined, PlusCircleFilled, PlusOutlined, QuestionCircleOutlined, ReloadOutlined, SearchOutlined, SettingOutlined } from "@ant-design/icons";
 import { Breadcrumb, Button, Col, Dropdown, Menu, PageHeader, Row, Table, } from "antd"
+import ButtonGroup from "antd/lib/button/button-group";
 import Search from "antd/lib/input/Search"
 import { Content } from "antd/lib/layout/layout"
 
@@ -128,14 +129,14 @@ const Items = () => {
         ]}
       />
       <Row justify='space-between'>
-        <Col span={8} style={{margin: "0 48px"}}>
+        <Col span={4} style={{margin: "0 48px"}}>
           <Dropdown overlay={menu} >
             <a onClick={e => e.preventDefault()}>
               Filter <DownOutlined />
             </a>
           </Dropdown>,
         </Col>
-        <Col span={12}>
+        <Col span={14}>
           <Row justify="center" >
             <Col flex={3}>
               <Search placeholder="input search text" allowClear onSearch={onSearch} enterButton style={{ width: 200 }} />
@@ -150,6 +151,13 @@ const Items = () => {
               <Button key="2" type="primary" icon={<PlusOutlined />}>
                 Add Items
               </Button>
+            </Col>
+            <Col flex={3}>
+              <Button icon={<ReloadOutlined/>}/>
+              <Button icon={<ColumnHeightOutlined/>}/>
+              <Button icon={<SettingOutlined/>}/>
+              <Button icon={<FullscreenOutlined/>}/>
+              
             </Col>
 
           </Row>
