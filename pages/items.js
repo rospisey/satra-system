@@ -205,9 +205,16 @@ const Items = () => {
               </Button>
             </Col>
             <Col flex={3}>
-              <Button key="2" type="primary" icon={<PlusOutlined />} href="/add-item">
-                Add Items
+              <Button key="2" type="primary" icon={<PlusOutlined />}  >
+                <Link href="/add-items/iteminfo" >
+
+                  <a style={{color:"white"}}>
+
+                    Add Items</a>
+                </Link>
               </Button>
+
+
             </Col>
             <Col flex={3}>
               <Button key="3" type="link" icon={<ReloadOutlined />} />
