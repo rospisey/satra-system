@@ -23,6 +23,7 @@ import { Content } from "antd/lib/layout/layout";
 const { Step } = Steps;
 
 import { useState } from "react";
+import FormInventory from "../../components/items_components/inventory";
 import FormItemInfo from "../../components/items_components/itemInfo";
 import FormPricing from "../../components/items_components/pricing";
 import FormVariation from "../../components/items_components/variation";
@@ -41,7 +42,7 @@ const steps = [
   },
   {
     title: "Inventory",
-    content: "Inventory",
+    content: <FormInventory/>,
   },
   {
     title: "Image",
