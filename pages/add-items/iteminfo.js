@@ -24,6 +24,7 @@ const { Step } = Steps;
 
 import { useState } from "react";
 import FormItemInfo from "../../components/items_components/itemInfo";
+import FormPricing from "../../components/items_components/pricing";
 import FormVariation from "../../components/items_components/variation";
 const steps = [
   {
@@ -36,7 +37,7 @@ const steps = [
   },
   {
     title: "Pricing",
-    content: "Pricing",
+    content: <FormPricing/>,
   },
   {
     title: "Inventory",
