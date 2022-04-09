@@ -83,7 +83,7 @@ const EditableCell = ({
   return <td {...restProps}>{childNode}</td>;
 };
 
-class EditableTable extends React.Component {
+class FormVariation extends React.Component {
   constructor(props) {
     super(props);
     this.columns = [
@@ -235,4 +235,4 @@ class EditableTable extends React.Component {
   }
 }
 
-export default EditableTable
+export default FormVariation

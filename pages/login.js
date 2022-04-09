@@ -1,4 +1,4 @@
-import { Breadcrumb } from "antd"
+import { Breadcrumb, Card } from "antd"
 import { Content } from "antd/lib/layout/layout"
 
 

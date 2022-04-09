@@ -1,7 +1,7 @@
 import { Breadcrumb } from "antd"
 import { Content } from "antd/lib/layout/layout"
-
-
+import image from "../image/flutter.png"
+import Img from "../components/image_view"
 const Receiving = ( ) =>{
     return (
          <Content style={{ margin: '0 16px' }}>
@@ -12,6 +12,7 @@ const Receiving = ( ) =>{
           <div style={{ padding: 24, minHeight: 360 }}>
             Bill is a cat.
           </div>
+          <Img eager="true" src={image} alt="fantasy" />
         </Content> 
     )
 }

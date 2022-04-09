@@ -23,6 +23,7 @@ import { Content } from "antd/lib/layout/layout";
 const { Step } = Steps;
 
 import { useState } from "react";
+import FormImageUpload from "../../components/items_components/image";
 import FormInventory from "../../components/items_components/inventory";
 import FormItemInfo from "../../components/items_components/itemInfo";
 import FormPricing from "../../components/items_components/pricing";
@@ -46,7 +47,7 @@ const steps = [
   },
   {
     title: "Image",
-    content: "Image",
+    content: <FormImageUpload/>,
   },
   {
     title: "Locations",
